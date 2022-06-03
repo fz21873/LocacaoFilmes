@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{33A5015B-8A19-4E41-BD86-1B3600FE3EFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C7DAB370-792D-499C-873B-0596AF81907E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocadoraFilmes.API", "LocacaoFilmes.API\LocadoraFilmes.API.csproj", "{214E81F2-3011-41E3-8F9F-CE9671155F5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{193752B5-53D3-45AB-9883-345465757F2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BAL", "BAL", "{B20C8F0C-89C2-4730-A940-09ECEEBB6EB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{211C25EE-AA85-4CBC-ADA9-9B297B9AD5CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL\BAL.csproj", "{6FC1BAE1-F7FD-4F35-8547-83EC515DDD17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL\DAL.csproj", "{41F175E2-CBF2-454D-ABD3-969FEE2B8EC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{A0925263-E83B-45B2-AECD-8CB50F9AB282}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{214E81F2-3011-41E3-8F9F-CE9671155F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214E81F2-3011-41E3-8F9F-CE9671155F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214E81F2-3011-41E3-8F9F-CE9671155F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214E81F2-3011-41E3-8F9F-CE9671155F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC1BAE1-F7FD-4F35-8547-83EC515DDD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC1BAE1-F7FD-4F35-8547-83EC515DDD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC1BAE1-F7FD-4F35-8547-83EC515DDD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC1BAE1-F7FD-4F35-8547-83EC515DDD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F175E2-CBF2-454D-ABD3-969FEE2B8EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F175E2-CBF2-454D-ABD3-969FEE2B8EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F175E2-CBF2-454D-ABD3-969FEE2B8EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F175E2-CBF2-454D-ABD3-969FEE2B8EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0925263-E83B-45B2-AECD-8CB50F9AB282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0925263-E83B-45B2-AECD-8CB50F9AB282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0925263-E83B-45B2-AECD-8CB50F9AB282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0925263-E83B-45B2-AECD-8CB50F9AB282}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{214E81F2-3011-41E3-8F9F-CE9671155F5A} = {C7DAB370-792D-499C-873B-0596AF81907E}
+		{6FC1BAE1-F7FD-4F35-8547-83EC515DDD17} = {B20C8F0C-89C2-4730-A940-09ECEEBB6EB4}
+		{41F175E2-CBF2-454D-ABD3-969FEE2B8EC3} = {193752B5-53D3-45AB-9883-345465757F2D}
+		{A0925263-E83B-45B2-AECD-8CB50F9AB282} = {211C25EE-AA85-4CBC-ADA9-9B297B9AD5CF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80F7D114-AE28-485A-BC07-E0C38A4800D5}
+	EndGlobalSection
+EndGlobal
