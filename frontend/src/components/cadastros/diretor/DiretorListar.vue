@@ -30,9 +30,6 @@
                                                 <v-text-field class="text-xs-left" v-model="props.item.sobreNome" label="Sobre Nome"></v-text-field>
                                              </v-col>
 
-                                              <v-col cols="12" sm="6" md="4">
-                                                <v-text-field class="text-xs-left" v-model="props.item.categoria" label="Categoria"></v-text-field>
-                                             </v-col>
 
                                          </v-row>
                                          </v-container>
@@ -145,7 +142,6 @@ export default {
                         text: 'Ações',
                         align: 'center',
                         value:'actions',
-                        sortable: false,
                         class: 'cabecalho-tabela'
                     }
                 ],

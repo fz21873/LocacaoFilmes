@@ -26,19 +26,32 @@
 
                                                             <v-col cols="12" sm="6" md="4">
                                                                 <v-text-field class="text-xs-left"
-                                                                    v-model="props.item.nome" label="Nome">
+                                                                    v-model="props.item.titulo" label="Titulo">
                                                                 </v-text-field>
                                                             </v-col>
 
                                                             <v-col cols="12" sm="6" md="4">
                                                                 <v-text-field class="text-xs-left"
-                                                                    v-model="props.item.sobreNome" label="Sobre Nome">
+                                                                    v-model="props.item.descricao" label="Descrição">
                                                                 </v-text-field>
                                                             </v-col>
 
                                                             <v-col cols="12" sm="6" md="4">
                                                                 <v-text-field class="text-xs-left"
-                                                                    v-model="props.item.categoria" label="Categoria">
+                                                                    v-model="props.item.tipo" label="Tipo Filme">
+                                                                </v-text-field>
+                                                            </v-col>
+
+                                                            <v-col cols="12" sm="6" md="4">
+                                                                <v-text-field class="text-xs-left"
+                                                                    v-model="props.item.diretor" label="Diretor">
+                                                                </v-text-field>
+                                                            </v-col>
+
+
+                                                            <v-col cols="12" sm="6" md="4">
+                                                                <v-text-field class="text-xs-left"
+                                                                    v-model="props.item.datalancamento" label="Data Lancamento">
                                                                 </v-text-field>
                                                             </v-col>
 
@@ -66,7 +79,7 @@
 
                                                         <v-btn style="margin-left:20px;" v-on="{ tooltip }"
                                                             class="excluir" small icon color="grey--text"
-                                                            @click="excluir(item.id, item.nome + ' ' + item.sobreNome);">
+                                                            @click="excluir(item.id, item.tipo);">
                                                             <v-icon>delete_forever</v-icon>
                                                         </v-btn>
 
