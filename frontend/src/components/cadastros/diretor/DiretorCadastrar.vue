@@ -31,6 +31,7 @@
     import Director from '../../../domain/diretor/Diretor';
     import DiretorService from '../../../domain/diretor/DiretorService';
     import PainelCadastro from '../../shared/paineis/PainelCadastro.vue';
+    import Util from '../../../domain/util/Util';
     export default {
          mixins: [CadastroMixin],
         components: {
@@ -105,7 +106,7 @@
             },
             salvarDiretor() {
 
-               if (!this.enviandoDados) {
+               if (!this.enviandoDados && !this.acabouDeSalvar) {
                     if (!this.$refs.form.validate()) {
                         this.alertaCor = 'error';
                         this.alertaIcone = 'warning';
@@ -153,7 +154,7 @@
                                 });
                         } else {
                             //edicao
-
+                            console.log(this.diretor);
                             this.diretorServico.update(this.diretor)
                                 .then(resposta => {
                                         this.$router.push({
@@ -194,7 +195,8 @@
 
             //se for edicao
             if (this.paramId) {
-                this.diretorServicoServico
+                console.log(this.paramId);
+                this.diretorServico
                 .getById(this.paramId)
                     .then(diretors => {
                         this.diretor = diretors;

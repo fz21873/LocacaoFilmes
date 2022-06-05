@@ -11,7 +11,7 @@ export default {
             carregandoLista: false,
             paramId: null,
             errosServidor: null,
-            modificado: false, //em relacao ao cadastro
+            modificado: false,
             acabouDeSalvar: false,
             modalConfirmacao: false,
             botaoAlteracoes: false,

@@ -2,10 +2,11 @@ export default class Director {
     constructor(
         id = 0,
         nome = '',
-        sobreNome = ''
+        sobreNome = '',
+
     ) {
         this.id = id;
         this.nome = nome;
-        this.sobreNnome = sobreNome;
+        this.sobreNome = sobreNome;
     }
 }

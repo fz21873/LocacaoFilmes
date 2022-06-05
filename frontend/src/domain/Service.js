@@ -56,7 +56,7 @@ export default class Service {
 
         return this._resource
             .update({
-                id: objeto.codigo
+                id: objeto.id
             }, objeto);
     }
 }

@@ -30,43 +30,24 @@ export default class Util {
     }
 
 
-    static validaData(data, maiorQueDataAtual = false) {
+    static validaData(data) {
 
         if (data.length <= 10) {
-
-            let dataCruaSplitada = data.split('');
-            let dia = dataCruaSplitada[0] + dataCruaSplitada[1];
-            let mes = dataCruaSplitada[3] + dataCruaSplitada[4];
-            let ano = dataCruaSplitada[6] + dataCruaSplitada[7] + dataCruaSplitada[8] + dataCruaSplitada[9];
-
-            if (mes <= 12) {
-                let diasMes = this.quantidadeDeDiaMes(ano, mes);
-                if (dia <= diasMes) {
-
-                    let dataPronta = ano + '-' + mes + '-' + dia;
-
-                    if (maiorQueDataAtual) {
-                        if (dataPronta >= new Date().toISOString().substr(0, 10)) {
-                            return dataPronta;
-                        } else {
-
-                            return true;
-                        }
-                    } else {
-
-
-                        return dataPronta;
-                    }
-                }
-            }
+            return true;
         }
         return false;
     };
 
+    static debounce(fun, mili) {
+        var timer;
+        var copy;
+        return function () {
+            clearTimeout(timer);
+            copy = arguments;
+            timer = setTimeout(function () {
+                fun.apply(null, copy);
+            }, mili);
+        };
+    }
 
-    static quantidadeDeDiaMes(ano, mes) {
-        if (ano != null && mes != null) {
-            return new Date(ano, mes, 0).getDate();
-        }
-    };
 }

@@ -13,14 +13,7 @@
                     </v-tooltip>
                     <span class="headline-custom">{{ titulo }}</span>
                     <v-spacer></v-spacer>
-                    <v-tooltip left color="white black--text">
-                        <template v-slot:activator="{ on }">
-                            <v-btn v-on="on" :class="mostrarInfo" icon  @click="mostrarModalAlteracoes = true">
-                                <v-icon>info</v-icon>
-                            </v-btn>
-                        </template>
-                        <span>Informações do registro</span>
-                    </v-tooltip>
+
                 </v-card-title>
 
                 <transition @after-enter="painelCarregou">

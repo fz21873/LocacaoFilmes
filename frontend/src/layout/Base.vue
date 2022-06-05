@@ -2,19 +2,22 @@
   <v-app id="inspire">
 
     <v-navigation-drawer v-model="drawer" app>
-      <!--  -->
+
       <v-list>
         <div v-for="item in itensMenu" :key="item.titulo">
-          <v-list-item v-on="on" :to="item.rota" active-class="item-ativo">
+
+         <template >
+          <v-list-item  :to="item.rota" active-class="item-ativo">
             <v-list-item-icon>
               <v-icon v-text="item.icone"></v-icon>
             </v-list-item-icon>
-            <!--<v-list-item-title>Home</v-list-item-title>-->
+
 
             <v-list-item-content>
               <v-list-item-title v-text="item.titulo"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+         </template>
 
         </div>
 
@@ -22,10 +25,10 @@
 
     </v-navigation-drawer>
 
-    <v-app-bar app color="deep-purple accent-4" dense dark>
+    <v-app-bar app color="primary" dense dark>
       <v-app-bar-nav-icon @click="drawer = !drawer"> </v-app-bar-nav-icon>
 
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Locadora de Filme</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
